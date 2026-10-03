@@ -1,0 +1,45 @@
+# --- Secrets: never commit ---
+.env
+.env.*
+!.env.example
+CONFIG/secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+id_rsa*
+id_ed25519*
+credentials*.json
+*secret*
+token*.txt
+
+# --- Runtime data ---
+LOGS/*
+!LOGS/.gitkeep
+*.log
+INBOX/audio/
+*.wav
+*.mp3
+*.m4a
+*.ogg
+
+# --- Local AI / tooling state ---
+.venv/
+venv/
+__pycache__/
+*.pyc
+node_modules/
+.claude/settings.local.json
+models/
+*.gguf
+vectorstore/
+.chroma/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.obsidian/workspace*.json
+.idea/
+.vscode/
